@@ -64,3 +64,6 @@ crashlytics-build.properties
 
 # UserSettings
 /UserSettings/
+
+# Unity ProjectSettings
+ProjectSettings/SceneTemplateSettings.json

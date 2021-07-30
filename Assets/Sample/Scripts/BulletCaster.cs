@@ -7,6 +7,7 @@ namespace Sample.Scripts
     public class BulletCaster : MonoBehaviour
     {
         [SerializeField] private BulletLinePool bulletLinePool;
+        [SerializeField] private BulletParabolicPool bulletParabolicPool;
         
         private TurnAroundWithDirection _turnAround;
         
@@ -26,6 +27,10 @@ namespace Sample.Scripts
             }
             else if (Input.GetButtonDown("Fire2"))
             {
+                var bullet = bulletParabolicPool.GetObject();
+                var direction = _turnAround.TargetDirection.normalized;
+                var startPosition = transform.position + direction + Vector3.up;
+                bullet.Configure(startPosition, direction, 65f);
             }
             else if (Input.GetButtonDown("Fire3"))
             {

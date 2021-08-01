@@ -8,6 +8,7 @@ namespace Sample.Scripts
     {
         [SerializeField] private BulletLinePool bulletLinePool;
         [SerializeField] private BulletParabolicPool bulletParabolicPool;
+        [SerializeField] private BulletCurvePool bulletCurvePool;
         
         private TurnAroundWithDirection _turnAround;
         
@@ -34,8 +35,14 @@ namespace Sample.Scripts
             }
             else if (Input.GetButtonDown("Fire3"))
             {
+                var bullet = bulletCurvePool.GetObject();
+                var position = transform.position;
+                var direction = _turnAround.TargetDirection.normalized;
+                var startPosition = position + direction + Vector3.up;
+                var endPosition = position + direction * 5f;
+                endPosition.y = 0f;
+                bullet.Configure(startPosition, endPosition, 2.5f);
             }
-
         }
     }
 }

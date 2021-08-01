@@ -432,6 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletLinePool: {fileID: 2062639686}
   bulletParabolicPool: {fileID: 2062639688}
+  bulletCurvePool: {fileID: 2062639689}
 --- !u!1 &2062639685
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,8 +444,9 @@ GameObject:
   - component: {fileID: 2062639687}
   - component: {fileID: 2062639686}
   - component: {fileID: 2062639688}
+  - component: {fileID: 2062639689}
   m_Layer: 0
-  m_Name: BulletPool
+  m_Name: BulletPools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,3 +492,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalBullet: {fileID: 3701754366096359339, guid: d4f73d32fa76d45969466ee922241ea5, type: 3}
+--- !u!114 &2062639689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062639685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17e98a668bec410f96fdf67073438c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalBullet: {fileID: -5346689569110993422, guid: 94e65dd1410ae4db295b49460ff1b3d2, type: 3}

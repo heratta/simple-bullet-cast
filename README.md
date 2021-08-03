@@ -35,12 +35,15 @@ Unity 2021.1.12f1
 ## 実行画面
 
 直進する弾
+
 ![弾(Line)](./Documents/simple-bullet-cast-line.gif)
 
 放物線を描く弾
+
 ![弾(Parabolic)](./Documents/simple-bullet-cast-parabolic.gif)
 
 パスに沿って移動する弾
+
 ![弾(Curve)](./Documents/simple-bullet-cast-curve.gif)
 
 ## 解説
